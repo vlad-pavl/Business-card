@@ -341,31 +341,24 @@ template {
   display: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #000;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .header {
+  margin-bottom: 100px;
+}
+
+.header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 150px;
-  border-bottom: 1px solid #ffbc40;
+  -webkit-box-shadow: 0 5px 15px rgba(22, 28, 45, 0.1);
+          box-shadow: 0 5px 15px rgba(22, 28, 45, 0.1);
+  background-color: #fff;
 }
 
 .header__logo .container-logo {
@@ -373,11 +366,12 @@ body {
   color: #000;
 }
 
-.header__logo .container-logo h1 {
+.header__logo .container-logo p {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 25px;
   white-space: nowrap;
   letter-spacing: .10em;
+  font-weight: bold;
   border-right: 0.17em solid #ffbc40;
   overflow: hidden;
   -webkit-animation: typing 3.5s steps(30, end), blink-caret 0.7s step-end infinite;
@@ -446,5 +440,76 @@ body {
   outline: 1px solid #ffbc40;
   -webkit-box-shadow: 0 2px 5px;
           box-shadow: 0 2px 5px;
+}
+
+.about {
+  background-image: url(../img/dvsup.png);
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__info {
+  width: 50%;
+  color: #fff;
+  font-size: 18px;
+}
+
+.about__info .about__title {
+  margin-bottom: 50px;
+}
+
+.about__info .about__text {
+  margin-bottom: 50px;
+  padding-left: 35px;
+  padding-right: 55px;
+  line-height: 1.2;
+}
+
+.about__info .about__text p:nth-child(2) {
+  color: #ffbc40;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-image: url("../img/main-bg.png");
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.title {
+  font-size: 36px;
+  color: #ffbc40;
+  font-weight: normal;
+}
+
+.preview__title {
+  max-width: 700px;
+  margin-bottom: 100px;
+  padding-left: 150px;
+}
+
+.preview__img {
+  display: block;
+  margin: 0 auto 100px;
 }
 /*# sourceMappingURL=main.css.map */
