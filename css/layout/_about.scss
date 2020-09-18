@@ -5,6 +5,7 @@
  .about__inner {
    display: flex;
    justify-content: space-between;
+   padding: 50px 0;
  }
  
  .about__info {
@@ -15,6 +16,7 @@
  
    .about__title {
      margin-bottom: 50px;
+     color: $main-color;;
    }
  
    .about__text {
@@ -25,7 +27,11 @@
      line-height: 1.2;
 
      p:nth-child(2) {
-       color: $main-color;
+      color: $main-color;
      }
+   }
+
+   .about__subtitle {
+    color: $main-color;
    }
  }

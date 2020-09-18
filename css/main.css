@@ -442,6 +442,17 @@ template {
           box-shadow: 0 2px 5px;
 }
 
+.preview__title {
+  max-width: 700px;
+  margin-bottom: 100px;
+  padding-left: 150px;
+}
+
+.preview__img {
+  display: block;
+  margin: 0 auto 100px;
+}
+
 .about {
   background-image: url(../img/dvsup.png);
 }
@@ -453,6 +464,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 50px 0;
 }
 
 .about__info {
@@ -463,6 +475,7 @@ template {
 
 .about__info .about__title {
   margin-bottom: 50px;
+  color: #ffbc40;
 }
 
 .about__info .about__text {
@@ -473,6 +486,10 @@ template {
 }
 
 .about__info .about__text p:nth-child(2) {
+  color: #ffbc40;
+}
+
+.about__info .about__subtitle {
   color: #ffbc40;
 }
 
@@ -498,18 +515,20 @@ body {
 
 .title {
   font-size: 36px;
-  color: #ffbc40;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
-.preview__title {
-  max-width: 700px;
-  margin-bottom: 100px;
-  padding-left: 150px;
+.portfolio__title {
+  color: #2D9687;
 }
 
-.preview__img {
-  display: block;
-  margin: 0 auto 100px;
+.portfolio__subtitle {
+  color: #2D9687;
+}
+
+.portfolio__inner {
+  padding: 50px 0;
 }
 /*# sourceMappingURL=main.css.map */
